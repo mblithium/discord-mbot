@@ -8,7 +8,7 @@ module.exports.run = async (client, msg, args) => {
         res.json()
         .then((resposta) => {
         person = resposta
-        console.log(person)
+        // Para testes console.log(person)
         now = new Date
         fake.seed = person.info.seed // Seed Gerador
         fake.tname = person.results[0].name.title // title
@@ -33,8 +33,8 @@ module.exports.run = async (client, msg, args) => {
         .setFooter(`Seed gerador: ${fake.seed}`)
         
         msg.channel.send(embed)
-
-        return console.log('fake:', fake)
+        // Para testes console.log('fake:', fake)
+        return;
         }).catch((err) => console.log('Alguma coisa deu errado ao converter json', err))
     }).catch((err) => console.log('Alguma coisa deu errado ao gerar o fake', err))
 
