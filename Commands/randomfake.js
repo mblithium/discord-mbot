@@ -20,7 +20,7 @@ module.exports.run = async (client, msg, args) => {
         fake.age = person.results[0].dob.age // Idade
         fake.birth = now.getFullYear() - fake.age // Data de nascimento.
         fake.mail = person.results[0].email // Email
-        fake.cell = person.results[0].cell // Celular
+        // fake.cell = person.results[0].cell // Celular
         let embed = new Discord.RichEmbed()
         .setTitle('Fake Generator')
         .setDescription('Crie um fake randomizado por uma seed.')
@@ -28,7 +28,7 @@ module.exports.run = async (client, msg, args) => {
         .addField('Nome:', fake.longname)
         .addField('Idade:', `${fake.age} (${fake.birth})`)
         .addField('Localização', `${fake.state}`)
-        .addField('Celular:', fake.cell)
+        // .addField('Celular:', fake.cell)
         .addField('Email template:', fake.mail)
         .setFooter(`Seed gerador: ${fake.seed}`)
         
