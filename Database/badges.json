@@ -1,0 +1,21 @@
+{
+    "GLOBAL": [{
+        "badgeid": "G1",
+        "badgeimg": "https://i.imgur.com/Jpj8cWd.png",
+        "badgename": "Desenvolvedor",
+        "description": "Badge exclusiva para desenvolvedores do bot."
+    },
+    {
+        "badgeid": "G2",
+        "badgeimg": "https://i.imgur.com/75wgkOS.jpg",
+        "badgename": "Multiversal Tester",
+        "description": "Ganho ao criar uma conta no MBOT em seu período ALPHA."
+    }
+    ],
+    "526530907905982464": [{
+        "badgeid": "00001",
+        "badgeimg": "https://i.imgur.com/8KoIPkz.png",
+        "badgename": "Ganhador do Torneio Multiversal!",
+        "description": "Um emblema especial ganho ao vencer o Torneio de Luta Multiversal da Cabana em 08/08/2020."
+    }]
+}

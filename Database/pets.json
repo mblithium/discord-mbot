@@ -1,0 +1,40 @@
+{
+        "list": [{
+            "pet_list": "🐱 El Gato, 🐱 cat, 🐶 dog, 🐴 horse, 🦝 raccoon"
+        }],
+        "el gato": [{
+            "name": "El Gato",
+            "tipo": "Especial",
+            "icone": "🐱",
+            "preco": "0",
+            "descript": "Um pet ganho ao criar seu perfil no mbot :D"
+        }],
+        "cat": [{
+            "name": "Gato",
+            "tipo": "Normal",
+            "icone": "🐱",
+            "preco": "950",
+            "descript": "Não se engane pela aparência, gatos são ótimos caçadores!"
+        }],
+        "dog": [{
+            "name": "Cachorro",
+            "tipo": "Normal",
+            "icone": "🐶",
+            "preco": "950",
+            "descript": "É o seu melhor amigo em qualquer situação"
+        }],
+        "horse": [{
+            "name": "Cavalo",
+            "tipo": "Normal",
+            "icone": "🐴",
+            "preco": "1070",
+            "descript": "Dizem que em um mundo mágico esses animais conseguem características novas."
+        }],
+        "raccoon": [{
+            "name": "Raccoon",
+            "tipo": "Selvagem",
+            "icone": "🦝",
+            "preco": "3700",
+            "descript": "Ele é esperto e bem forte, mas difícil de aceitar ordens."
+        }]
+}

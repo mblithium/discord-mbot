@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    
+    <script>
+    function cotacao() {
+        fetch("https://economia.awesomeapi.com.br/json/USD-BRL").then(Response => {
+            return Response.json()
+        }).then(cotacao => {
+            document.querySelector("h1").innerHTML = cotacao[0].ask
+            console.log(cotacao) 
+        })
+    }
+    cotacao()
+    </script>
+</body>
+</html>

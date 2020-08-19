@@ -1,0 +1,16 @@
+
+# Configurações Sensíveis.
+config.json
+package-lock.json
+
+
+# Node Modules
+node_modules
+
+# Ambiente de Testes
+Assets
+talks.json
+Testes
+
+# Banco de Dados
+Database/db.json
