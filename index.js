@@ -22,7 +22,7 @@ client.on('ready', () => {
 
 client.on('guildCreate', guild => {
     console.log(`O bot entrou no servidor: ${guild.name} (id: ${guild.id}). População: ${guild.memberCount} membros!`)
-    client.user.setActivity(`Estou em ${client.guilds} servidores.`, "PLAYING")
+    client.user.setActivity(`Estou em ${client.guilds.size} servidores.`, "PLAYING")
     db.set(guild.id, []).write()
 })
 

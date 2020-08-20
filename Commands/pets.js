@@ -6,7 +6,7 @@ const dbpet = low(adapter2)
 const b = '```'
 
 module.exports.run = async (client, msg, args) => {
-    if (!args[0]) return msg.channel.send(`**Uso do comando de Pets**\nVer pet com o multidex:\n${b}mb-pet nomedopet${b}\nVer lista de pets disponíveis:${b}mb-pet list${b}`)
+    if (!args[0]) return msg.channel.send(`**Uso do comando de Pets**\nVer pet com o multidex:\n${b}mb-pets nomedopet${b}\nVer lista de pets disponíveis:${b}mb-pets list${b}`)
         let arg = args.toString()
 
         arg = arg.split(',').join(' ')

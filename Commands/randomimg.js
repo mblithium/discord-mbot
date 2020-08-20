@@ -12,7 +12,7 @@ module.exports.run = async (client, msg, args) => {
             // Número (0) ou Letra (1)
             nl = ((randomizar < 5) ? nl = 0 : nl = 1);
             if (nl == 0) {
-                console.log('Numero. Aleatorizando...')
+                // testes console.log('Numero. Aleatorizando...')
                 // 10 Números 9 índices
                 randomizar = Math.floor(Math.random() * 9) + 1
                 gen = `${gen}${rand[0][randomizar]}`
@@ -22,7 +22,7 @@ module.exports.run = async (client, msg, args) => {
                 randomizar = Math.floor(Math.random() * 25) + 1
                 gen += `${rand[1][randomizar]}`
             }
-            console.log(`GEN[${i}]: ${gen}`)
+            // testes console.log(`GEN[${i}]: ${gen}`)
         }
     
         return msg.channel.send(`https://prnt.sc/${gen}`)

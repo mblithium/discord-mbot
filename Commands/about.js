@@ -1,0 +1,16 @@
+const Discord = require('discord.js')
+const about = require('../package.json')
+module.exports.run = async (client, msg, args) => {
+    let embed = new Discord.RichEmbed()
+            .setTitle('MBOT v.Alpha')
+            .setImage(client.user.avatarURL)
+            .setDescription('O MBOT não foca em comandos de moderação, apenas em diversão e utilidades.\n\nPrefixo: mb-\nPara ver meus comandos digite mb-help')
+            .addField('Versão', about.version)
+            .addField('Servidores', client.guilds.size)
+            .addField('Desenvolvedor', 'MB_Lithium#2371 (405876093686644736)')
+            .addField('Github', 'https://github.com/mblithium/discord-mbot')
+            .setColor("#6c5ce7")
+            .setFooter('MBOT')
+    console.log(msg.channel.id)
+    return msg.channel.send(embed)
+}
