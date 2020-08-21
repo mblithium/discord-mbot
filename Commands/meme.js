@@ -35,6 +35,8 @@ module.exports.run = async (client, msg, args) => {
             function memeCreate(t, memer) {
                 let meme = memer
                 let text = t
+                const { registerFont } = require('canvas')
+                registerFont('Assets/Fonts/BebasNeue-Regular.ttf', { family: 'Bebas_Neue' })
                 const ctcanvas = CANVAS.createCanvas(meme[1], meme[2]);
                 const ctx = ctcanvas.getContext('2d')
 
@@ -45,7 +47,7 @@ module.exports.run = async (client, msg, args) => {
                     ctx.fillRect(meme[6], meme[7], meme[8], meme[9])
 
                     ctx.fillStyle = '#000000'
-                    ctx.font = '35px OpenSans bold'
+                    ctx.font = '35px Bebas_Neue'
                     ctx.direction = ''
                     ctx.shadowOffsetX = '30'
                     ctx.textAlign = 'center'

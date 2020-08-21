@@ -1,14 +1,12 @@
 
 # Configurações Sensíveis.
 config.json
-package-lock.json
-
 
 # Node Modules
 node_modules
 
 # Ambiente de Testes
-Assets
+package-lock.json
 talks.json
 Testes
 
