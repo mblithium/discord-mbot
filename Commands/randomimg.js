@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 // RANDOM IMG
 // Gera um id aleatório para achar imagens no prnt.sc 
 module.exports.run = async (client, msg, args) => {
-    if (msg.channel.id == '704363957292630066' || msg.channel.id == '559183156008452146') {
+    if (msg.channel.id == '704363957292630066' || msg.channel.id == '559183156008452146' || msg.channel.id == '743698370794749992') {
 
         var rand = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9], ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']]
         var gen = '';

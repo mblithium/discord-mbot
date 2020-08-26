@@ -6,7 +6,7 @@ module.exports.run = async (client) => {
     setInterval(() => {
         randomizar = Math.floor(Math.random() * 9) + 1
         client.user.setActivity(status[randomizar])
-    }, 10000);
+    }, 50000);
 console.log('Iniciou o bagulho de Status')
 return;
 }
