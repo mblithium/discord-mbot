@@ -1,7 +1,7 @@
 {
   "name": "discord-mbot",
   "version": "0.0.1",
-  "description": "O MBOT é um bot para o discord criado com utilizando o discord.js e algumas outras bibliotecas interessantes de banco de dados local e manipulação de imagem utilizando a API Canvas. Foi feito com o objetivo de aprender mais como funciona o discord.js e evoluir na programação com javascript e roda com o node.js ",
+  "description": "O MBOT é um bot para o discord criado utilizando o discord.js e algumas outras bibliotecas interessantes de banco de dados local e manipulação de imagem utilizando a API Canvas. Foi feito com o objetivo de aprender mais como funciona o discord.js e evoluir na programação com javascript e roda com o node.js ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
