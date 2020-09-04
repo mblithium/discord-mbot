@@ -9,7 +9,10 @@ node_modules
 package-lock.json
 talks.json
 Testes
+Commands/kgm.js
+Commands/testar.js
 
 # Banco de Dados
 Database/db.json
 Database/servers.json
+Database/rpgdb.json

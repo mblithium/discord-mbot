@@ -18,7 +18,11 @@ module.exports.run = async (client, msg, args) => {
         let person = args[0]
         
         perf = db.get(comando).find({ id: person }).value()
-        if (perf == undefined) return msg.channel.send('Usuário não encontrado')
+        if (perf == undefined) {
+            const message = await msg.channel.send('Usuário não encontrado')
+            setTimeout(() => { message.delete() }, 10000);
+            return
+        }
 
         profileCreate(ctype, perf.id, perf.nick, perf.avatar, perf.Coins, perf.notas.length, perf.badges, perf.pets)
         return;
@@ -91,7 +95,7 @@ module.exports.run = async (client, msg, args) => {
         var te = [482, 80]
 
         console.log(typeperf)
-        const background = await CANVAS.loadImage("https://i.imgur.com/x5zIUsf.jpg").catch((err) => console.log(`Erro ao carregar imagem de fundo ${err}`))
+        const background = await CANVAS.loadImage("./Assets/IMG/Profile/BG/01.jpg").catch((err) => console.log(`Erro ao carregar imagem de fundo ${err}`))
         ctx.drawImage(background, 0, 0, 620, 460)
         console.log(typeperf)
         if (dbbadges.get(typeperf).find({ badgeid: badges[0] }).value() != undefined) {

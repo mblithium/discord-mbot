@@ -87,9 +87,9 @@ client.on('message', async msg => {
         return console.log(`Usuario ${msg.author.id} ${msg.author.username} att coin p/ ${coin}`)
     }
 
-    if (msg.author.id == '260436463244673035') {
+    /*if (msg.author.id == '260436463244673035') {
         return msg.reply('Você deveria estar fazendo suas tarefas em vez de enviar comandos.')
-    }
+    }*/
 
     try {
         let commandFile = require(`./Commands/${command}.js`)

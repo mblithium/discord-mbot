@@ -12,13 +12,14 @@ module.exports.run = async function (client, msg, args) {
             epicgamesfree = epicgamesfree.data.Catalog.searchStore.elements
             quantGames = Number(epicgamesfree.length) - 1
             var games = epicgamesfree[0].title
-            for (i = 1;i <= quantGames;i++) {
-                games = `${games} \n ${epicgamesfree[i].title}`
+            for (var i = 1;i <= quantGames;i++) {
+                games = i + ` ${games} \n ${epicgamesfree[i].title}`
             }
             const embed = new Discord.RichEmbed()
                 .setTitle('Jogos Grátis Epic Games')
                 .setURL('https://www.epicgames.com/store/pt-BR/free-games')
                 .setThumbnail(epicgamesfree[0].keyImages[0].url)
+                .setColor('#6c5ce7')
                 .addField('Epic Games', `${games}`)
             return msg.channel.send(embed)
         })
